@@ -1,8 +1,21 @@
 
 pasos a seguir en este segundo repositorio
 
-1) subir este txt. 
-Se creara un repositorio nuevo "segundo_repo"
+
+1)se crea  el local, desde consola, en la carpeta donde esta el txt
+$ git init
+lo subo al area intermedia
+$ git add txt_1
+luego lo subo al repo local
+$git commit txt_1
+luego lo subo al repo reomoto (que aun no esta creado)
+
+el remoto aun no existe, asi que lo creo via web
+y se sincroniza la carpeta con el repo creado
+…or push an existing repository from the command line
+$git remote add origin https://github.com/leluza/segundo_repo.git
+$git branch -M main
+$git push -u origin main
 
 
 2) agregar un cambio al txt y subirlo
