@@ -19,7 +19,14 @@ $git push -u origin main
 
 
 2) agregar un cambio al txt y subirlo
+$git status
+me notifica que el archivo tiene cambio
+$git add .
+ahora el archivo esta en el intermedio
+$ git commit -m "arch modificado"
 
 3) modificar  txt desde web
 
 4) bajar txt modificado
+
+
