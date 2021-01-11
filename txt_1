@@ -59,6 +59,7 @@ remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/leluza/segundo_repo.git
    c9a7a63..c414f10  main -> main
 
+habia hecho un intento de pull + push y no cargaba los cambios, porque aun no los habia puesto en mi local, todabia estaban en mi WS
 
 3) modificar  txt desde web
 
