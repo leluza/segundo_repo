@@ -14,7 +14,7 @@ el remoto aun no existe, asi que lo creo via web
 y se sincroniza la carpeta con el repo creado
 …or push an existing repository from the command line
 $git remote add origin https://github.com/leluza/segundo_repo.git
-$git branch -M main
+$git branch -M main (renombre la rama "origin" --> "main", en local)
 $git push -u origin main
 
 
@@ -24,6 +24,41 @@ me notifica que el archivo tiene cambio
 $git add .
 ahora el archivo esta en el intermedio
 $ git commit -m "arch modificado"
+$ git commit -am "arch modificado 2"
+
+$ git status 
+En la rama main
+Tu rama está adelantada a 'origin/main' por 2 commits.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo esta limpio
+
+$ git pull origin 
+HEAD   main (elegir a q rama de mi local baja, para dsp subir)
+
+$ git pull origin main (elegi subir rama main)
+Desde https://github.com/leluza/segundo_repo
+ * branch            main       -> FETCH_HEAD
+Ya está actualizado.
+
+$ git pull origin 
+HEAD   main   
+
+$ git push origin (en la segunda consulta aparecieron mas ramas locales???)
+FETCH_HEAD    HEAD          main          ORIG_HEAD     origin/main 
+
+$ git push origin main (en esta segunda vez me pidio acceso al remoto, antes no ???)
+Username for 'https://github.com': leluza
+Password for 'https://leluza@github.com': 
+Contando objetos: 6, listo.
+Delta compression using up to 8 threads.
+Comprimiendo objetos: 100% (4/4), listo.
+Escribiendo objetos: 100% (6/6), 864 bytes | 864.00 KiB/s, listo.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/leluza/segundo_repo.git
+   c9a7a63..c414f10  main -> main
+
 
 3) modificar  txt desde web
 
